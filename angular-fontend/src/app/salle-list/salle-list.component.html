@@ -1,0 +1,22 @@
+<h2>Salle Liste</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Numero du Salle</th>
+            <th>Nom du Salle</th>
+            <th>Capacité</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor =" let Salle of Salles">
+        <td> {{Salle.numS}} </td>
+        <td> {{Salle.nomS}} </td>
+        <td> {{Salle.capacite}} </td>
+        <td>
+            <button (click)="updatesalle(Salle.numS)" class="btn btn-info">Update</button>
+            <button (click)="deletesalle(Salle.numS)" (click)="reloadCurrentPage()" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+        </td>
+    </tr>
+    </tbody>
+</table>

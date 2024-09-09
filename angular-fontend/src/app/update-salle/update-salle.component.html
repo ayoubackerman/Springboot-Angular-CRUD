@@ -1,0 +1,28 @@
+<div class="col-md-8 offset-md-3">
+    <h3>Update Employee</h3>
+    
+    
+    <form (ngSubmit)="onSubmit()">
+ 
+        <div class="form-group">
+            <label>Numero de salle</label>
+            <input type="text" class="form-control" id="numS"
+            [(ngModel)]="salle.numS" name="numS">
+    
+        </div>
+        <div class="form-group">
+            <label>Nom de salle</label>
+            <input type="text" class="form-control" id="nomS"
+            [(ngModel)]="salle.nomS" name="nomS">
+    
+        </div>
+        <div class="form-group">
+            <label>Capacité de salle</label>
+            <input type="text" class="form-control" id="capacite"
+            [(ngModel)]="salle.capacite" name="capacite">
+    
+        </div>
+        
+        <button class="btn btn-success" type="submit"> update</button>
+    </form>
+    </div>
